@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+form {
+    margin: 0 auto;
+    width: 400px;
+    line-height: 27px;
+    padding: 25px 50px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px #a5a5a5;
+}

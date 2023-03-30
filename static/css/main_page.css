@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* установка шрифта и размера текста для всего документа */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* стили для заголовка страницы */
+h1 {
+  text-align: center;
+  font-size: 36px;
+}
+
+h1:not(:first-child) {
+  margin-bottom: 20px;
+}
+
+/* стили для формы входа */
+form {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 auto;
+}
+
+form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+
+  transition: .2s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #347536;
+}
+
+/* стили для таблицы */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+
+/* стили для кнопки сохранения таблицы */
+.save-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* стили для ссылок в меню */
+nav a {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #f2f2f2;
+}
+
+label:not(:first-child) {
+  margin-top: 10px;
+}
