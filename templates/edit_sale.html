@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/edit_sale.css')}}">
+{% endblock %}
+{% block title %}Редактирование продажи{% endblock %}
+
+{% block content %}
+<div class="title">
+  <h1>Рога и Копыта</h1>
+  <h2>Таблица для учета продаж</h2>
+</div>
+<form method="POST">
+  <label for="name">Название проданного корма</label>
+  <input type="text" id="name" name="name" value="{{ sale[1] }}" required>
+  <br>
+  <label for="amount">Количество проданного корма в шт.</label>
+  <input type="number" id="amount" name="amount" value="{{ sale[2] }}" required min="0">
+  <br>
+  <label for="weight">Вес проданного корма в кг.</label>
+  <input type="number" id="weight" name="weight" value="{{ sale[3] }}" step="0.001" required min="0">
+  <br>
+  <label for="price">Изначальная цена корма за шт.</label>
+  <input type="number" id="price" name="price" value="{{ sale[4] }}" required min="0">
+  <br>
+  <label for="discount">Скидка в процентах</label>
+  <input type="number" id="discount" name="discount" value="{{ sale[5] }}" min="0">
+  <br>
+  <label for="manager">ФИО менеджера</label>
+  <input type="text" id="manager" name="manager" value="{{ sale[7] }}" required>
+  <br>
+  <input type="submit" value="Сохранить">
+  <a href="{{ url_for('admin') }}">Вернуться назад</a>
+</form>
+
+{% endblock %}
